@@ -1,0 +1,339 @@
+html {
+	font-size: 12px;
+}
+
+body {
+	background-color: #22313f;
+	overflow-x: hidden;
+	outline: none;
+	font-family: 'Exo 2', sans-serif;
+}
+
+
+/* Навигация */
+.navbar {
+	padding: 0;
+}
+
+.navbar-light .navbar-toggler {
+	border: 1px solid #6bccef;
+	background-color: rgba(34, 49, 63, 0.5);
+}
+
+.navbar-collapse {
+	background-color: rgba(34, 49, 63, 0.5);
+	padding: 20px;
+}
+
+.navbar-toggler-right {
+	top: 1rem;
+}
+
+.nav-link {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .open>.nav-link {
+	color: #6bccef;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+	color: #6bccef;
+}
+
+.navbar-light .navbar-nav .nav-link>.label {
+	padding: 2px 6px;
+	border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover>.label {
+	background-color: #6bccef;
+	color: #22313f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #6bccef;
+}
+
+
+/* Шапка */
+.header {
+	position: relative;
+	border-bottom: 10px solid #6bccef;
+}
+
+.header-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+
+
+/* Партикли в шапке */
+#particles-js {
+	height: 100%;
+	height: calc(100vh - 10px);
+	height: -moz-calc(100vh - 10px);
+	height: -webkit-calc(100vh - 10px);
+	height: -o-calc(100vh - 10px);
+}
+
+.name {
+	color: #bfcad1;
+	font-size: 5rem;
+}
+
+.title {
+	color: #6bccef;
+	font-size: 3rem;
+}
+
+
+/* Полоска с навыками */
+.Count:after {
+	content: "%"
+}
+
+.skillbar {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	width: 100%;
+	background: #eee;
+	height: 35px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
+	-ms-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+	transition: 0.4s linear;
+	-webkit-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
+	-ms-transition-property: width, background-color;
+	-o-transition-property: width, background-color;
+	transition-property: width, background-color;
+}
+
+.skillbar-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 110px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #ffffff;
+	background: #6adcfa;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+	display: block;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 0 20px;
+	height: 35px;
+	line-height: 35px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+	height: 35px;
+	width: 0px;
+	background: #6adcfa;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 11px;
+	height: 35px;
+	line-height: 35px;
+	color: #ffffff;
+	color: black;
+}
+
+
+/* Мои работы */
+.project {
+	position: relative;
+	border-bottom: 10px solid #525e64;
+	box-shadow: 0px 0px 16px 0px #525e64;
+	margin-bottom: 15px;
+	height: 16vmax;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: transform 500ms ease-in-out;
+}
+
+.project .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	background-color: rgba(34, 49, 63, 0.8);
+	transition: opacity 500ms ease-in-out;
+}
+
+.project:hover {
+	transform: scale(1.1);
+	z-index: 1;
+}
+
+.project:hover .overlay {
+	opacity: 1;
+}
+
+.project .description {
+	font-size: 1.3rem;
+	color: #bfcad1;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	text-align: center;
+}
+
+.project .description__subtitle {
+	margin-bottom: 8px;
+}
+
+
+/* Ссылки */
+a {
+	color: #bfcad1;
+}
+
+a:hover {
+	color: #6bccef;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #6bccef;
+	text-decoration: none;
+}
+
+a:active {
+	color: #6bccef;
+	text-decoration: none;
+}
+
+
+/* Картинки */
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
+.img-vresponsive {
+	width: 30%;
+	width: 35vmin;
+	height: auto;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mb-5 {
+	margin-bottom: 5px;
+}
+
+
+/* Секции */
+section {
+	color: #bfcad1;
+}
+
+section .section-heading {
+	color: #6bccef;
+	padding-top: 20px;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+section .section-content {
+	padding: 5vmax;
+}
+
+section .section-footer {
+	padding-bottom: 20px;
+}
+
+section .subsection-title {
+	color: #6bccef;
+}
+
+#about .section-content {
+	font-size: 1.75rem;
+}
+
+hr {
+	border: 1px solid #6bccef;
+	margin: 1rem 30% 1rem 30%;
+}
+
+span.tag {
+	padding: 2px 5px 2px 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-size: 1rem;
+	border: 1px solid lightgray;
+	display: inline-block;
+}
+
+
+/* Подвал */
+.footer {
+	background-color: #6bccef;
+	color: #22313f;
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+	.project .overlay {
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	html {
+		font-size: 7px;
+	}
+}

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant|Rubik&display=swap');
+
+body {
+   background-image: url("../img/fon.jpg");
+   background-attachment: fixed;
+   font-size: 18px;
+   color: white;
+   font-family: Rubik;
+   line-height: 1.5;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   outline: none;
+}
+
+.proof {
+   line-height: 2;
+}
+
+/* Шапка */
+nav b {
+   font-size: 24px;
+}
+
+/* Текст */
+b {
+   font-family: "Cormorant Infant";
+}
+
+.w3-bar-block a {
+   font-family: "Cormorant Infant";
+   font-size: 20px;
+}
+
+/* Картинки */
+.w3-half img {
+   margin-bottom: -6px;
+   margin-top: 16px;
+   opacity: .8;
+   transition: .5s;
+}
+
+.w3-half img:hover {
+   opacity: 1;
+}
+
+.rashod,
+.termo {
+   width: 66%;
+}
+
+.small-title {
+   font-size: 30px;
+}
+
+/* ИНН, КПП, БИК */
+.proof {
+   display: inline-flex;
+}
+
+.proof li {
+   display: inline;
+   padding: 10px;
+   list-style: none;
+}
+
+ul.proof {
+   padding: 0;
+   margin: 0;
+}
+
+/* Подвал */
+footer {
+   padding: 1rem 0 .1rem 0;
+   background: #000;
+   text-align: center;
+}
+
+footer a {
+   color: white;
+   text-decoration: none;
+   transition: .1s;
+}
+
+footer a:hover {
+   background-color: blue;
+   transition: .1s;
+   padding: 5px;
+}
+
+.copyright {
+   color: gray;
+   font-size: 1rem;
+   margin: 10px 0 1rem 0;
+   padding: 0;
+   text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 1180px) {
+   h3 b {
+      font-size: 32px;
+   }
+
+   h1 b {
+      font-size: 43px;
+   }
+
+   b {
+      font-size: 55px;
+   }
+
+   nav b {
+      font-size: 22px;
+   }
+}
+
+@media (max-width: 1054px) {
+   .copyright {
+      font-size: 12px;
+   }
+}
+
+@media (max-width: 736px) {
+   footer {
+      padding: 1rem 0 1rem 0;
+   }
+
+   .copyright {
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 600px) {
+   h1 b {
+      font-size: 35px;
+   }
+}
+
+@media (max-width: 550px) {
+   h3 b {
+      font-size: 25px;
+   }
+
+   h1 b {
+      font-size: 35px;
+   }
+
+   b {
+      font-size: 15px;
+   }
+
+   .small-title {
+      font-size: 25px;
+   }
+
+   body {
+      font-size: 17px;
+   }
+
+   .proof {
+      font-size: 16px;
+   }
+
+   .rashod,
+   .termo {
+      width: 100%;
+   }
+
+   nav b {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 420px) {
+   h1 b {
+      font-size: 25px;
+   }
+
+   body {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 360px) {
+   .small-title {
+      font-size: 21px;
+   }
+}
+
+@media (max-width: 320px) {
+   h1 b {
+      font-size: 23px;
+   }
+
+   .small-title {
+      font-size: 20px;
+   }
+
+   body {
+      font-size: 15px;
+   }
+}
